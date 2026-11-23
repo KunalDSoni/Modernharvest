@@ -268,63 +268,6 @@ export const faqs = [
   },
 ];
 
-export const posts = [
-  {
-    slug: "soil-health-is-a-balance-sheet",
-    title: "Soil health is a balance sheet, not a slogan",
-    excerpt:
-      "Organic matter is the asset that pays every season. Here is how we measure it and what it returns.",
-    date: "2026-08-14",
-    category: "Agronomy",
-    image: media.blog[0],
-  },
-  {
-    slug: "what-drip-irrigation-actually-saves",
-    title: "What drip irrigation actually saves",
-    excerpt:
-      "Water figures get quoted loosely. We broke down a season of metered data across four districts.",
-    date: "2026-07-30",
-    category: "Water",
-    image: media.blog[1],
-  },
-  {
-    slug: "cold-chain-from-field-to-port",
-    title: "Cold chain from field to port",
-    excerpt:
-      "Most quality loss happens after harvest. A look at where temperature actually breaks down.",
-    date: "2026-07-11",
-    category: "Logistics",
-    image: media.blog[2],
-  },
-  {
-    slug: "reading-a-climate-projection",
-    title: "How to read a district climate projection",
-    excerpt:
-      "Projections are planning tools, not forecasts. A practical guide for growers making varietal decisions.",
-    date: "2026-06-25",
-    category: "Climate",
-    image: media.blog[3],
-  },
-  {
-    slug: "traceability-without-the-theatre",
-    title: "Traceability without the theatre",
-    excerpt:
-      "Buyers want provenance they can verify. What that requires in practice at the pack-house.",
-    date: "2026-06-09",
-    category: "Supply chain",
-    image: media.blog[4],
-  },
-  {
-    slug: "the-case-for-staggered-planting",
-    title: "The case for staggered planting",
-    excerpt:
-      "Spreading a planting calendar spreads risk. The trade-offs, and when it is worth the complexity.",
-    date: "2026-05-21",
-    category: "Agronomy",
-    image: media.blog[5],
-  },
-];
-
 export const plans = [
   {
     name: "Starter",

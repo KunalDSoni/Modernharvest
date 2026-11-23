@@ -17,7 +17,6 @@ const primary = [
 const allPages = [
   { href: "/our-team", label: "Our Team" },
   { href: "/contact-us", label: "Contact Us" },
-  { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
   { href: "/gallery", label: "Gallery" },
 ];

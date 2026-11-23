@@ -27,7 +27,6 @@ export const media = {
   // Page banners
   bannerTeam: m("NHQgmqW1RcoerG9Ey35pw7Ik9LU.jpg"),
   bannerAbout: m("HTCxbtzQLbckykWOh7EGkWRnSB0.jpg"),
-  bannerBlog: m("612wNVfu30qJ0wlB8BXE0oj8dI.jpg"),
   bannerFaq: m("WHGzkc8lDGldjUMhoD6UhaAnlHE.jpg"),
   bannerPricing: m("ugZkAwezwEFvaVvqOdHcnbt4Fk4.jpg"),
   bannerWide: m("xlc0DOt5Dx6MjEsLkGfLdLxr9gI.jpg"),
@@ -56,14 +55,6 @@ export const media = {
     m("6uhA9nT0wvnH7HwKv2Hhb3oC2Ts.jpg"),
   ],
 
-  blog: [
-    m("EFD6cyMVNldERpCQYxlkTWirGVE.jpg"),
-    m("gOX9dC8laWlozJ4qgVlrpIfRus.jpg"),
-    m("Vl9Xyxlivf4vqUxOWAcj3mnhs8U.jpg"),
-    m("qCyCAmhxlV57seEY1QBty9FvE.jpg"),
-    m("6URqoGebEzB3NjyFNs5MpYsZseA.jpg"),
-    m("VMUywOhKNsGCYSx01cpQVToqTU.jpg"),
-  ],
 
   avatars: [
     m("92WRhs9yNlwqtI8Lsf1CXUYbsQ.jpg"),
