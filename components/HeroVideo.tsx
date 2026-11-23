@@ -100,7 +100,7 @@ export default function HeroVideo() {
 
         <div className="mt-14 flex items-center justify-between border-t border-white/25 pt-6 text-[14px] text-white/85">
           <span>22.4707&deg; N, 70.0577&deg; E</span>
-          <span className="hidden sm:inline">Talala, Gir &mdash; Gujarat, India</span>
+          <span className="hidden sm:inline">Gujarat, India</span>
         </div>
       </div>
     </section>
