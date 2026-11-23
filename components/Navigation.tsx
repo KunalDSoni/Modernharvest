@@ -9,6 +9,7 @@ import { Leaf } from "./ui";
 const primary = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About Us" },
+  { href: "/products", label: "Products" },
   { href: "/solutions", label: "Solutions" },
   { href: "/pricing", label: "Pricing" },
 ];
@@ -69,8 +70,8 @@ export default function Navigation() {
 
         <nav
           aria-label="Primary"
-          className={`hidden items-center gap-9 lg:flex ${
-            overBanner ? "" : "lg:ml-14 lg:mr-auto"
+          className={`hidden items-center gap-6 whitespace-nowrap lg:flex xl:gap-9 ${
+            overBanner ? "" : "lg:ml-8 lg:mr-auto xl:ml-14"
           }`}
         >
           {primary.map((l) => (
@@ -123,7 +124,7 @@ export default function Navigation() {
 
         <Link
           href="/contact-us"
-          className="hidden items-center gap-2.5 rounded-pill bg-white/15 px-7 py-3.5 text-[15px] text-white ring-1 ring-white/25 backdrop-blur-md transition-colors hover:bg-white/25 lg:inline-flex"
+          className="hidden shrink-0 items-center gap-2.5 whitespace-nowrap rounded-pill bg-white/15 px-5 py-3.5 xl:px-7 text-[15px] text-white ring-1 ring-white/25 backdrop-blur-md transition-colors hover:bg-white/25 lg:inline-flex"
         >
           <Leaf />
           Let&rsquo;s work together
