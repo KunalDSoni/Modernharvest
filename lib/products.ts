@@ -1,9 +1,10 @@
 /**
  * Product catalogue shown on /products.
  *
- * To add a photo for a product that doesn't have one yet, drop a JPEG into
- * public/media/products/ and set its `image` path below. Products without an
- * image render a branded placeholder tile instead.
+ * Photos live in public/media/products/. Cumin, rice and onion are free-licence
+ * stock (Pexels / Unsplash); psyllium husk is CC BY-SA 3.0 from Wikimedia
+ * Commons and is credited on the page. A product with no `image` renders a
+ * branded placeholder tile instead.
  */
 export type ProductCategory =
   | "Fresh fruits"
@@ -62,6 +63,7 @@ export const products: Product[] = [
     category: "Spices & seeds",
     description:
       "Aromatic cumin seed, machine-cleaned and sorted for consistent colour and flavour.",
+    image: p("cumin.jpg"),
   },
   {
     slug: "sesame-seed",
@@ -77,6 +79,7 @@ export const products: Product[] = [
     category: "Spices & seeds",
     description:
       "Fine, high-purity psyllium (isabgol) husk for food, nutraceutical and fibre applications.",
+    image: p("psyllium-husk.jpg"),
   },
   {
     slug: "rice",
@@ -84,6 +87,7 @@ export const products: Product[] = [
     category: "Grains",
     description:
       "Long-grain basmati and non-basmati rice, milled and graded to buyer specification.",
+    image: p("rice.jpg"),
   },
   {
     slug: "onion",
@@ -91,6 +95,7 @@ export const products: Product[] = [
     category: "Fresh vegetables",
     description:
       "Firm red and white onions with good shelf life, sorted by size and packed for transit.",
+    image: p("onion.jpg"),
   },
   {
     slug: "green-chilli",
