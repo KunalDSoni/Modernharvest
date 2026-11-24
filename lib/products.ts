@@ -2,7 +2,7 @@
  * Product catalogue shown on /products.
  *
  * Photos live in public/media/products/. Cumin, rice and onion are free-licence
- * stock (Pexels / Unsplash). A product with no `image` renders a
+ * stock (Pexels / Unsplash / Pixabay). A product with no `image` renders a
  * branded placeholder tile instead.
  */
 export type ProductCategory =
@@ -78,6 +78,7 @@ export const products: Product[] = [
     category: "Spices & seeds",
     description:
       "Fine, high-purity psyllium (isabgol) husk for food, nutraceutical and fibre applications.",
+    image: p("psyllium-husk.jpg"),
   },
   {
     slug: "rice",
