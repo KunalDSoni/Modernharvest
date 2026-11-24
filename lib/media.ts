@@ -9,7 +9,7 @@ export const media = {
   heroPoster: m("hero-poster.jpg"),
 
   // Solution card thumbnails
-  precisionFarming: m("VJEQ90eoeZmQA4nFDsiTPJTO2yI.jpeg"),
+  precisionFarming: m("VMUywOhKNsGCYSx01cpQVToqTU.jpg"),
   sustainableIrrigation: m("ITj0m4cojCl5KTS5ctOJgWN8uvg.jpg"),
   supplyChain: m("zeoPYx06jCmlnLFcwMNcJHRRU.jpg"),
 
