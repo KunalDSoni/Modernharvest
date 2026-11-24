@@ -41,7 +41,7 @@ export function CTABand() {
  * Split page header: white ground, text left, image bleeding off the right
  * edge of the viewport and running up behind the transparent nav, with the
  * Driven/Rooted/Impactful pills overlaid at the image's lower edge.
- * Used on About, Pricing, FAQ and solution detail pages.
+ * Used on About, FAQ and solution detail pages.
  */
 export function SplitHeader({
   eyebrow,

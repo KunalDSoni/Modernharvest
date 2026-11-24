@@ -11,7 +11,6 @@ const primary = [
   { href: "/about-us", label: "About Us" },
   { href: "/products", label: "Products" },
   { href: "/solutions", label: "Solutions" },
-  { href: "/pricing", label: "Pricing" },
 ];
 
 const allPages = [

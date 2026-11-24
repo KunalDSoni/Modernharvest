@@ -222,50 +222,6 @@ export const faqs = [
   },
   {
     q: "How is pricing structured?",
-    a: "Programmes are priced per hectare or per shipment depending on the service. The pricing page sets out our standard tiers, and we quote bespoke scopes on request.",
-  },
-];
-
-export const plans = [
-  {
-    name: "Starter",
-    price: "$1,200",
-    cadence: "per season",
-    body: "For single-site farms beginning a structured sustainability programme.",
-    features: [
-      "Field assessment and written plan",
-      "Soil and water baseline testing",
-      "Quarterly agronomy review",
-      "Email and phone support",
-    ],
-    featured: false,
-  },
-  {
-    name: "Growth",
-    price: "$3,400",
-    cadence: "per season",
-    body: "For multi-field operations scaling toward export-grade consistency.",
-    features: [
-      "Everything in Starter",
-      "Precision monitoring and dashboards",
-      "Irrigation design and commissioning",
-      "Post-harvest handling protocol",
-      "Monthly on-site agronomy visits",
-    ],
-    featured: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    cadence: "annual",
-    body: "For cooperatives, exporters, and buyers securing supply at scale.",
-    features: [
-      "Everything in Growth",
-      "Full traceability and compliance reporting",
-      "Cold chain and export documentation",
-      "Dedicated programme manager",
-      "Certification support and audit prep",
-    ],
-    featured: false,
+    a: "Programmes are priced per hectare or per shipment depending on the service. We quote bespoke scopes on request.",
   },
 ];
