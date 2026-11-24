@@ -70,6 +70,23 @@ export default function Products() {
       />
 
       <section className="shell py-20 lg:py-28">
+        <div className="mb-10 flex flex-wrap items-center justify-between gap-4 border-b border-black/10 pb-8">
+          <p className="text-[17px] text-muted">
+            {products.length} products across fruits, vegetables, spices, oilseeds, grains and dehydrated lines.
+          </p>
+          {/* Generated at build time by scripts/catalogue-pdf.js */}
+          <a
+            href="/modern-harvest-catalogue.pdf"
+            download
+            className="inline-flex items-center gap-2 rounded-pill bg-brand px-5 py-3 text-[15px] text-white transition-colors hover:bg-brand-dark"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="h-4 w-4" aria-hidden="true">
+              <path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Download catalogue (PDF)
+          </a>
+        </div>
+
         <div data-reveal-group className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((p) => (
             <ProductCard key={p.slug} product={p} />

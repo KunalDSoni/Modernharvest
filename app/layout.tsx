@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const instrument = Instrument_Sans({
   subsets: ["latin"],
@@ -30,6 +31,25 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
+// schema.org data so search engines can show the business name, logo and contact details.
+// Keep in step with the details on app/contact-us/page.tsx.
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Modern Harvest",
+  url: "https://modernharvest.in/",
+  logo: "https://modernharvest.in/icon.svg",
+  description:
+    "Modern Harvest connects Indian family farms with global B2B buyers through sustainable agricultural exports.",
+  address: { "@type": "PostalAddress", addressRegion: "Gujarat", addressCountry: "IN" },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "sales",
+    telephone: "+91-92130-22464",
+    email: "meet.dhaduk@modernsmilk.com",
+  },
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={instrument.variable}>
@@ -39,6 +59,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{
             __html: "document.documentElement.className+=' js'",
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
       </head>
       <body className="font-sans antialiased">
@@ -52,6 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <Footer />
         <Reveal />
+        <WhatsAppButton />
       </body>
     </html>
   );

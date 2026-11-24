@@ -1,121 +1,66 @@
-# Mango Farm - Website Rebuild
+# Modern Harvest
 
-Live site: [https://kunaldsoni.github.io/farm/](https://kunaldsoni.github.io/farm/)
+Website for Modern Harvest, an agricultural export business in Gujarat, India.
 
-A static website for a Kesar mango products company. The workflow scrapes the original Wix site using Playwright, then delivers a clean, framework-free HTML/CSS/JS site.
+Live site: [modernharvest.in](https://modernharvest.in)
 
-## Project Structure
+Built with Next.js 14 (App Router), React, Tailwind CSS and Framer Motion. It is exported as a fully
+static site and served by GitHub Pages from the `docs/` folder.
 
-```
-Farm/
-├── mango-farm/              # Rebuilt static website (deliverable)
-│   ├── index.html
-│   ├── about-us.html
-│   ├── faq.html
-│   ├── gallery.html
-│   ├── kesar-mango.html
-│   ├── mango-powder.html
-│   ├── mango-pulp.html
-│   ├── other-varieties.html
-│   └── assets/
-│       ├── css/style.css
-│       ├── js/main.js
-│       └── images/
-├── mango-farm-export/       # Single-file export version
-├── original/                # Scraped content from live site
-│   ├── shots/               # Full-page screenshots of original pages
-│   ├── *.json               # Extracted text, images, colors, fonts per page
-│   └── *.txt                # Body copy per page
-├── crawl/                   # Raw crawled HTML from original site
-├── build-shots/             # Screenshots of rebuilt pages for QA
-├── extract.js               # Scrape all pages - text, images, styles, screenshots
-├── extract2.js              # Targeted re-scrape for specific pages
-├── shoot.js                 # Screenshot local build pages
-├── interact.js              # Test interactive UI (FAQ, form, mobile nav)
-├── logoshot.js              # Render logo badge SVG → PNG
-├── wordshot.js              # Render wordmark SVG → PNG
-├── package.json
-└── package-lock.json
-```
+## Getting started
 
-## Prerequisites
-
-- Node.js 18+
-- Google Chrome installed (Playwright uses the `chrome` channel)
-
-## Setup
+Requires Node.js 18+.
 
 ```bash
 npm install
-npx playwright install chrome
+npm run dev        # http://localhost:3000
 ```
 
-## Workflow
+## Deploying
 
-### 1. Scrape the original site
-
-Crawls all pages, captures full-page screenshots, and extracts text content, images, colors, and fonts into `original/`.
+GitHub Pages serves the `docs/` folder on the `main` branch, so a deploy is a rebuild plus a commit:
 
 ```bash
-node extract.js
+npm run build:docs
 ```
 
-To re-scrape specific pages only:
+This runs `next build` (static export to `out/`), prints the product catalogue PDF with
+`scripts/catalogue-pdf.js`, then `scripts/export-to-docs.js` copies `out/` to
+`docs/` and writes `CNAME` (modernharvest.in) and `.nojekyll`. Commit the updated `docs/` and push.
 
-```bash
-node extract2.js
+## Project layout
+
+```
+app/                    Pages (App Router). One folder per route.
+  layout.tsx            Shared nav, footer, site metadata and schema.org data
+  solutions/[slug]/     One generated page per solution in lib/content.ts
+  sitemap.ts, robots.ts Built to /sitemap.xml and /robots.txt
+  icon.svg, apple-icon.png, opengraph-image.png
+                        Favicon, home-screen icon and link-preview image
+components/             Navigation, Footer, hero video, section blocks, contact form
+lib/
+  content.ts            Solutions copy
+  products.ts           Product catalogue shown on /products
+  media.ts              Paths to shared images and the hero video
+public/media/           Web-sized images and video served by the site
+brand-logo/             Master logo files (SVG and PNG, green / white / black)
+scripts/
+  export-to-docs.js     Copies the build into docs/ for GitHub Pages
+  catalogue-pdf.js      Prints /catalogue/ to modern-harvest-catalogue.pdf during build:docs
+  brand-images.js       Re-renders apple-icon.png and opengraph-image.png from brand-logo/
+docs/                   Built site (generated, do not edit by hand)
 ```
 
-### 2. Serve the rebuilt site locally
+`Photos/` and `Mango/` hold full-resolution source photos and are git-ignored. Export a web-sized
+copy (about 2000 px wide, under ~500 KB) into `public/media/` before using a photo on the site.
 
-Any static file server works. Example using `npx`:
+## Common edits
 
-```bash
-npx serve mango-farm -l 8765
-# or
-npx http-server mango-farm -p 8765
-```
+- **Products:** edit `lib/products.ts` and add the photo to `public/media/products/`.
+- **Solutions:** edit `lib/content.ts`. New entries get a page and a sitemap entry automatically.
+- **Contact details:** update `app/contact-us/page.tsx`, the schema.org block in `app/layout.tsx` and
+  the WhatsApp number in `components/WhatsAppButton.tsx` together.
+- **Logo changes:** update `brand-logo/`, `components/Logo.tsx` and `app/icon.svg`, then run
+  `npm run brand-images`.
 
-### 3. Screenshot the build
-
-Takes full-page screenshots of each rebuilt page and saves them to `build-shots/`.
-
-```bash
-node shoot.js index.html about-us.html faq.html gallery.html kesar-mango.html mango-powder.html mango-pulp.html other-varieties.html
-```
-
-### 4. Test interactive features
-
-Verifies FAQ accordion, email form submission, and mobile burger menu behavior.
-
-```bash
-node interact.js
-```
-
-### 5. Render logo assets
-
-Generate PNG logo assets from HTML/SVG renders (requires local server running):
-
-```bash
-node logoshot.js   # saves mango-farm/assets/images/mf-logo-badge.png
-node wordshot.js   # saves mango-farm/assets/images/mf-word.png
-```
-
-## Pages
-
-| Page | File |
-|---|---|
-| Home | `index.html` |
-| About Us | `about-us.html` |
-| Kesar Mango | `kesar-mango.html` |
-| Mango Pulp | `mango-pulp.html` |
-| Mango Powder | `mango-powder.html` |
-| Other Varieties | `other-varieties.html` |
-| Gallery | `gallery.html` |
-| FAQ | `faq.html` |
-
-## Tech Stack
-
-- **Scraping / QA automation**: Playwright (headless Chrome)
-- **Site**: Vanilla HTML, CSS, JavaScript - no framework, no build step
-- **Viewport**: Designed at 1440px desktop, responsive down to 390px mobile
+The contact form sends enquiries through [Web3Forms](https://web3forms.com).

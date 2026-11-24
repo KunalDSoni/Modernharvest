@@ -99,7 +99,8 @@ export default function HeroVideo() {
         </div>
 
         <div className="mt-14 flex items-center justify-end border-t border-white/25 pt-6 text-[14px] text-white/85">
-          <span>Gujarat, India</span>
+          {/* right padding keeps the label clear of the floating WhatsApp button */}
+          <span className="pr-16 sm:pr-20">Gujarat, India</span>
         </div>
       </div>
     </section>

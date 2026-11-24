@@ -8,3 +8,8 @@ build-shots/
 .next/
 tsconfig.tsbuildinfo
 out/
+
+# Raw, full-resolution source photos (1+ GB). Commit only the
+# web-sized copies the site uses, under public/media/.
+Photos/
+Mango/
