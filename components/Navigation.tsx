@@ -15,7 +15,6 @@ const primary = [
 ];
 
 const allPages = [
-  { href: "/our-team", label: "Our Team" },
   { href: "/contact-us", label: "Contact Us" },
   { href: "/faq", label: "FAQ" },
   { href: "/gallery", label: "Gallery" },
@@ -33,7 +32,7 @@ export default function Navigation() {
    *  - over a split header (white ground): transparent, dark text
    *  - once scrolled past the header: solid green, white text
    */
-  const bannerPages = ["/", "/solutions", "/our-team", "/contact-us"];
+  const bannerPages = ["/", "/solutions", "/contact-us"];
   const overBanner = bannerPages.includes(pathname);
 
   useEffect(() => {

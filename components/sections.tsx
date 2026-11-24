@@ -102,7 +102,7 @@ export function SplitHeader({
 
 /**
  * Full-bleed banner header: edge-to-edge image with a scrim, centred white
- * text, transparent nav sitting over it. Used on Solutions, Our Team and
+ * text, transparent nav sitting over it. Used on Solutions and
  * Contact pages.
  */
 export function BannerHeader({

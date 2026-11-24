@@ -226,8 +226,8 @@ export default function Home() {
                 <br />
                 Der Linden
               </p>
-              <Button href="/our-team" variant="glass">
-                Meet our team
+              <Button href="/about-us" variant="glass">
+                About us
               </Button>
             </div>
           </div>
