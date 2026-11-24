@@ -53,9 +53,34 @@ export function SplitHeader({
   eyebrow: string;
   title: string;
   body?: string;
-  image: string;
+  image?: string;
   imageAlt?: string;
 }) {
+  if (!image) {
+    return (
+      <section className="relative bg-white">
+        <div className="shell pb-14 pt-[150px] lg:pb-20 lg:pt-[190px]">
+          <div data-reveal-group className="max-w-3xl">
+            <div data-reveal>
+              <Pill className="mb-6">{eyebrow}</Pill>
+            </div>
+            <h1
+              data-reveal
+              className="text-[40px] font-medium leading-[1.06] tracking-[-1.4px] sm:text-[54px] lg:text-[70px] lg:leading-[77px]"
+            >
+              {title}
+            </h1>
+            {body ? (
+              <p data-reveal className="mt-6 max-w-md text-[17px] leading-relaxed text-muted">
+                {body}
+              </p>
+            ) : null}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="relative bg-white">
       <div className="lg:grid lg:min-h-[564px] lg:grid-cols-[minmax(0,58%)_minmax(0,42%)]">

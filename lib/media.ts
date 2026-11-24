@@ -27,7 +27,6 @@ export const media = {
   // Page banners
   bannerTeam: m("NHQgmqW1RcoerG9Ey35pw7Ik9LU.jpg"),
   bannerAbout: m("HTCxbtzQLbckykWOh7EGkWRnSB0.jpg"),
-  bannerFaq: m("WHGzkc8lDGldjUMhoD6UhaAnlHE.jpg"),
   bannerPricing: m("ugZkAwezwEFvaVvqOdHcnbt4Fk4.jpg"),
   bannerWide: m("xlc0DOt5Dx6MjEsLkGfLdLxr9gI.jpg"),
   fieldWide: m("xhSsrYi10FiNV46Znp9A2Dr64.jpg"),
