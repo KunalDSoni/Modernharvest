@@ -18,7 +18,7 @@ npm run dev        # http://localhost:3000
 
 ## Deploying
 
-GitHub Pages serves the `docs/` folder on the `main` branch, so a deploy is a rebuild plus a commit:
+GitHub Pages serves the `docs/` folder on the `dev` branch, so a deploy is a rebuild, a commit and a push to `dev`:
 
 ```bash
 npm run build:docs
@@ -26,7 +26,7 @@ npm run build:docs
 
 This runs `next build` (static export to `out/`), prints the product catalogue PDF with
 `scripts/catalogue-pdf.js`, then `scripts/export-to-docs.js` copies `out/` to
-`docs/` and writes `CNAME` (modernharvest.in) and `.nojekyll`. Commit the updated `docs/` and push.
+`docs/` and writes `CNAME` (modernharvest.in) and `.nojekyll`. Commit the updated `docs/` and push `dev`. (`main` still holds the previous static site.)
 
 ## Project layout
 
