@@ -11,7 +11,7 @@ export default function HeroVideo() {
   const [failed, setFailed] = useState(false);
 
   /*
-   * Muted autoplay is still refused in some real conditions — iOS Low Power
+   * Muted autoplay is still refused in some real conditions - iOS Low Power
    * Mode, data saver, background tabs. Retry when the page becomes visible
    * and once on first interaction, so the hero doesn't sit on a frozen frame.
    */
@@ -20,7 +20,7 @@ export default function HeroVideo() {
       const v = videoRef.current;
       if (!v || document.hidden) return;
       v.play().catch(() => {
-        /* still blocked — the poster underneath keeps the hero looking right */
+        /* still blocked - the poster underneath keeps the hero looking right */
       });
     };
     attempt();
@@ -36,7 +36,7 @@ export default function HeroVideo() {
     <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden">
       {/*
         The poster carries the first paint (and is all that shows if the video
-        fails), so it sits underneath rather than on the <video> element —
+        fails), so it sits underneath rather than on the <video> element -
         a <source> error does not fire onError on the <video> itself.
       */}
       <div
@@ -67,7 +67,7 @@ export default function HeroVideo() {
         </video>
       ) : null}
 
-      {/* Legibility scrim — the template keeps the footage almost untinted */}
+      {/* Legibility scrim - the template keeps the footage almost untinted */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-black/25" aria-hidden="true" />
 
       <div className="shell relative z-10 pb-14 pt-32">
@@ -82,8 +82,8 @@ export default function HeroVideo() {
             </div>
 
             <p className="mt-7 max-w-lg text-[32px] font-medium leading-[1.15] tracking-[-0.6px] text-white">
-              Through sustainable farming and smart collaboration, we grow more than crops
-              &mdash; we grow impact.
+              Through sustainable farming and smart collaboration, we grow more than crops, we grow
+              impact.
             </p>
 
             <div className="mt-10">

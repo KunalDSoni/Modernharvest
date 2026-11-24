@@ -15,7 +15,7 @@ const instrument = Instrument_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://modernharvest.in"),
   title: {
-    default: "Modern Harvest — Redefining agriculture at a global scale",
+    default: "Modern Harvest - Redefining agriculture at a global scale",
     template: "%s | Modern Harvest",
   },
   description:
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Modern Harvest",
-    title: "Modern Harvest — Redefining agriculture at a global scale",
+    title: "Modern Harvest - Redefining agriculture at a global scale",
     description:
-      "Sustainable farming and smart collaboration — we grow more than crops, we grow impact.",
+      "Sustainable farming and smart collaboration, we grow more than crops, we grow impact.",
   },
   twitter: { card: "summary_large_image" },
 };

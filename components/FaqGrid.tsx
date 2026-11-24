@@ -7,7 +7,7 @@ type Item = { q: string; a: string };
 /**
  * Two-column FAQ card grid, matching the reference: closed cards are white
  * with a "+", and an open card flips to solid brand green with white text
- * and an "×". Items fill column-wise — first half left, second half right.
+ * and an "×". Items fill column-wise - first half left, second half right.
  */
 export default function FaqGrid({ items }: { items: Item[] }) {
   const [open, setOpen] = useState<number | null>(null);

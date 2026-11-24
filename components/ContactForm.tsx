@@ -55,7 +55,7 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
-          subject: `${SUBJECT} — ${data.get("interest") ?? "General enquiry"}`,
+          subject: `${SUBJECT} - ${data.get("interest") ?? "General enquiry"}`,
           from_name: "Modern Harvest website",
           replyto: data.get("email"),
           name: data.get("name"),
@@ -147,8 +147,8 @@ export default function ContactForm() {
         >
           {status === "sent" &&
             (hasKey
-              ? "Thank you — your enquiry is on its way. We'll reply within one working day."
-              : `Opening your email app — if nothing happens, write to ${CONTACT_EMAIL}.`)}
+              ? "Thank you, your enquiry is on its way. We'll reply within one working day."
+              : `Opening your email app - if nothing happens, write to ${CONTACT_EMAIL}.`)}
           {status === "error" && (
             <>
               Sorry, something went wrong sending your message. Please try again or email{" "}

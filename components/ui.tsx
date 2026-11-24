@@ -13,7 +13,7 @@ export function Leaf({ className = "" }: { className?: string }) {
   );
 }
 
-/* Small rounded label — "About us", "Our solutions", "Driven / Rooted / Impactful". */
+/* Small rounded label - "About us", "Our solutions", "Driven / Rooted / Impactful". */
 export function Pill({
   children,
   tone = "light",

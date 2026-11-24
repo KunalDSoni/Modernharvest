@@ -25,7 +25,7 @@ export default function Gallery() {
       <SplitHeader
         eyebrow="Gallery"
         title="Moments that tell our story."
-        body="Land, crops, and the people who work them — photographed across our growing regions."
+        body="Land, crops, and the people who work them, photographed across our growing regions."
         image={media.gallery[0]}
         imageAlt="Workers harvesting vegetables"
       />

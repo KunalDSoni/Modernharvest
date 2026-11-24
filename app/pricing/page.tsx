@@ -9,7 +9,7 @@ import FaqGrid from "@/components/FaqGrid";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Transparent programme pricing for farms, cooperatives, and exporters — from single-site starters to enterprise supply agreements.",
+    "Transparent programme pricing for farms, cooperatives, and exporters, from single-site starters to enterprise supply agreements.",
 };
 
 export default function Pricing() {
@@ -18,7 +18,7 @@ export default function Pricing() {
       <SplitHeader
         eyebrow="Pricing"
         title="Simple. Scalable. Designed for growth."
-        body="Straightforward programme pricing. No tie-ins, no per-seat surprises — you pay for the seasons we work together."
+        body="Straightforward programme pricing. No tie-ins, no per-seat surprises, you pay for the seasons we work together."
         image={media.bannerPricing}
         imageAlt="Workers tending a market garden"
       />

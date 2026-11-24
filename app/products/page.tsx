@@ -64,7 +64,7 @@ export default function Products() {
       <SplitHeader
         eyebrow="Our products"
         title="From Indian farms to your market."
-        body="Fresh produce, spices, oilseeds, grains and dehydrated products — sourced from trusted growers, graded with care and packed for export."
+        body="Fresh produce, spices, oilseeds, grains and dehydrated products, sourced from trusted growers, graded with care and packed for export."
         image="/media/products/mango.jpg"
         imageAlt="Basket of ripe Alphonso mangoes"
       />

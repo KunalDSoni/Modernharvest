@@ -7,7 +7,7 @@ const root = path.join(__dirname, '..');
 const out = path.join(root, 'out');
 const docs = path.join(root, 'docs');
 
-if (!fs.existsSync(out)) throw new Error('out/ not found — run `next build` first');
+if (!fs.existsSync(out)) throw new Error('out/ not found - run `next build` first');
 
 fs.rmSync(docs, { recursive: true, force: true });
 fs.cpSync(out, docs, { recursive: true });

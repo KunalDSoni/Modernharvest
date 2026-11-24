@@ -19,7 +19,7 @@ export const solutions: Solution[] = [
       "We use data-driven insights and smart technology to help farmers monitor soil health.",
     image: media.precisionFarming,
     intro:
-      "Precision farming is at the heart of the agricultural transformation we're driving. By combining technology, data, and deep agronomic insight, we help farmers manage their fields at a micro level — making every seed, drop of water, and hour of labor more effective than ever before.",
+      "Precision farming is at the heart of the agricultural transformation we're driving. By combining technology, data, and deep agronomic insight, we help farmers manage their fields at a micro level, making every seed, drop of water, and hour of labor more effective than ever before.",
     body:
       "Our precision farming solution empowers growers to monitor, plan, and act with pinpoint accuracy, leading to improved productivity, resource efficiency, and long-term sustainability.",
     benefits: [
@@ -45,7 +45,7 @@ export const solutions: Solution[] = [
     intro:
       "Water is the single most contested input in modern agriculture. Our irrigation programmes pair soil-moisture sensing with drip and micro-sprinkler design so that every litre applied reaches the root zone rather than the atmosphere.",
     body:
-      "We survey, design, and commission systems that fit the land as it is — then train the people who run them, so the savings hold up long after installation.",
+      "We survey, design, and commission systems that fit the land as it is, then train the people who run them, so the savings hold up long after installation.",
     benefits: [
       "Cut water use by up to 40% against flood irrigation",
       "Stabilise yields through consistent root-zone moisture",
@@ -115,7 +115,7 @@ export const solutions: Solution[] = [
       "We connect sensing, planning, and reporting tools into a single view of the farm.",
     image: media.plants,
     intro:
-      "Farms rarely lack data — they lack one place to read it. We integrate the sensors, imagery, and record-keeping already in use into a single operating picture.",
+      "Farms rarely lack data, they lack one place to read it. We integrate the sensors, imagery, and record-keeping already in use into a single operating picture.",
     body:
       "The result is a working system your team actually opens: field-level dashboards, alerting that respects the season, and reporting that satisfies buyers and auditors without duplicate entry.",
     benefits: [
@@ -139,7 +139,7 @@ export const solutions: Solution[] = [
       "Certification-ready organic systems built on soil health rather than substitution.",
     image: media.vegetables,
     intro:
-      "Organic conversion fails when it is treated as swapping one input for another. We rebuild the system underneath — soil biology, rotation, and pest ecology — so the farm holds its yield through transition.",
+      "Organic conversion fails when it is treated as swapping one input for another. We rebuild the system underneath, soil biology, rotation, and pest ecology, so the farm holds its yield through transition.",
     body:
       "We guide growers through the full conversion window, including the record-keeping and inspection cycles that certification depends on.",
     benefits: [
@@ -214,7 +214,7 @@ export const testimonials = [
   },
   {
     quote:
-      "They're a genuinely friendly partner — responsive, straightforward, and invested in the outcome.",
+      "They're a genuinely friendly partner, responsive, straightforward, and invested in the outcome.",
     name: "Daniel Okoye",
     role: "Procurement Lead",
     avatar: media.avatars[3],
@@ -252,7 +252,7 @@ export const faqs = [
   },
   {
     q: "How long does an organic conversion take?",
-    a: "Certification bodies generally require a conversion period of three years. We support the full window — agronomy, record-keeping, and inspection cycles — so the farm holds its yield through the transition.",
+    a: "Certification bodies generally require a conversion period of three years. We support the full window, agronomy, record-keeping, and inspection cycles, so the farm holds its yield through the transition.",
   },
   {
     q: "Can you handle export documentation?",

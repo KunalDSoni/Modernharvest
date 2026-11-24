@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const principles = [
   {
     title: "Rooted in the land",
-    body: "We start from soil, water, and season — not from a sales target. Every programme we run is designed around what a specific piece of land can sustain.",
+    body: "We start from soil, water, and season, not from a sales target. Every programme we run is designed around what a specific piece of land can sustain.",
   },
   {
     title: "Driven by evidence",
@@ -33,7 +33,7 @@ export default function AboutUs() {
       <SplitHeader
         eyebrow="About us"
         title="Elevating global farming standards."
-        body="Modern Harvest is more than a company — we're a movement toward smarter, more sustainable farming."
+        body="Modern Harvest is more than a company, we're a movement toward smarter, more sustainable farming."
         image={media.bannerAbout}
         imageAlt="Aerial view of fields divided by a winding river"
       />
@@ -122,7 +122,7 @@ export default function AboutUs() {
           <div>
             <h2 className="text-h2">Where we go next.</h2>
             <p className="mt-6 text-[17px] leading-relaxed text-muted">
-              The next decade of farming will be defined by volatility — in weather, in water, and
+              The next decade of farming will be defined by volatility, in weather, in water, and
               in markets. Our work is to make that volatility survivable for the people who grow
               food, and invisible to the people who buy it.
             </p>

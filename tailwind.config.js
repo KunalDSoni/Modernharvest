@@ -10,13 +10,13 @@ module.exports = {
       colors: {
         // Harvest Hill palette, sampled from the live template
         brand: {
-          DEFAULT: "#035925", // rgb(3, 89, 37) — nav, buttons, quote panel
+          DEFAULT: "#035925", // rgb(3, 89, 37) - nav, buttons, quote panel
           dark: "#02481e",
           light: "#0a6e30",
         },
         ink: "#000000",
         muted: "#585858",
-        paper: "#fafafa", // rgb(250,250,250) — alternating section bg
+        paper: "#fafafa", // rgb(250,250,250) - alternating section bg
       },
       fontFamily: {
         sans: ["var(--font-instrument-sans)", "Instrument Sans", "system-ui", "sans-serif"],

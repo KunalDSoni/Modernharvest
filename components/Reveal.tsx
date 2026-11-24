@@ -58,7 +58,7 @@ export default function Reveal() {
     );
 
     nodes.forEach((n) => {
-      // Anything already on screen at mount shows immediately — no flash.
+      // Anything already on screen at mount shows immediately - no flash.
       if (n.getBoundingClientRect().top < window.innerHeight * 0.9) {
         n.classList.add("is-in");
       } else {

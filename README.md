@@ -1,4 +1,4 @@
-# Mango Farm — Website Rebuild
+# Mango Farm - Website Rebuild
 
 Live site: [https://kunaldsoni.github.io/farm/](https://kunaldsoni.github.io/farm/)
 
@@ -28,7 +28,7 @@ Farm/
 │   └── *.txt                # Body copy per page
 ├── crawl/                   # Raw crawled HTML from original site
 ├── build-shots/             # Screenshots of rebuilt pages for QA
-├── extract.js               # Scrape all pages — text, images, styles, screenshots
+├── extract.js               # Scrape all pages - text, images, styles, screenshots
 ├── extract2.js              # Targeted re-scrape for specific pages
 ├── shoot.js                 # Screenshot local build pages
 ├── interact.js              # Test interactive UI (FAQ, form, mobile nav)
@@ -117,5 +117,5 @@ node wordshot.js   # saves mango-farm/assets/images/mf-word.png
 ## Tech Stack
 
 - **Scraping / QA automation**: Playwright (headless Chrome)
-- **Site**: Vanilla HTML, CSS, JavaScript — no framework, no build step
+- **Site**: Vanilla HTML, CSS, JavaScript - no framework, no build step
 - **Viewport**: Designed at 1440px desktop, responsive down to 390px mobile

@@ -7,7 +7,7 @@ import Link from "next/link";
  */
 export default function Logo({ className = "" }: { className?: string }) {
   return (
-    <Link href="/" aria-label="Modern Harvest — home" className={`flex items-center gap-3 ${className}`}>
+    <Link href="/" aria-label="Modern Harvest - home" className={`flex items-center gap-3 ${className}`}>
       <svg viewBox="0 0 40 40" aria-hidden="true" className="h-9 w-9 shrink-0">
         <g fill="currentColor">
           {/* grain heads, mirrored either side of a central stem */}

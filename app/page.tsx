@@ -65,9 +65,9 @@ export default function Home() {
           </div>
           <div className="lg:pt-2">
             <p data-reveal className="max-w-md text-[17px] leading-relaxed text-muted">
-              Our mission is to redefine what&rsquo;s possible in modern farming &mdash; creating
+              Our mission is to redefine what&rsquo;s possible in modern farming, creating
               lasting value for communities, ecosystems, and future generations. Rooted in
-              tradition, driven by innovation &mdash; we grow more than crops, we grow impact.
+              tradition, driven by innovation, we grow more than crops, we grow impact.
             </p>
             <div data-reveal className="mt-10">
               <Button href="/about-us">About the company</Button>
@@ -170,7 +170,7 @@ export default function Home() {
             <Pill className="mb-6">Why choose us</Pill>
           </div>
           <h2 data-reveal className="max-w-3xl text-[36px] font-medium leading-[1.1] tracking-[-1.2px] sm:text-[48px] lg:text-[62px] lg:leading-[1.08]">
-            We&rsquo;re more than just a farm &mdash; we&rsquo;re your trusted partner in
+            We&rsquo;re more than just a farm, we&rsquo;re your trusted partner in
             sustainable agriculture.
           </h2>
         </div>
@@ -215,7 +215,7 @@ export default function Home() {
                 <path d="M9.9 5.5c-3.3 1.6-5.4 4.6-5.4 8.3 0 3 1.7 5.1 4.2 5.1 2.1 0 3.7-1.6 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.8 0-1 .2.4-1.9 2-3.6 4-4.6l-2.2-2Zm9.4 0c-3.3 1.6-5.4 4.6-5.4 8.3 0 3 1.7 5.1 4.2 5.1 2.1 0 3.7-1.6 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.8 0-1 .2.4-1.9 2-3.6 4-4.6l-2.2-2Z" />
               </svg>
               <p className="text-[21px] font-medium leading-snug lg:text-[24px]">
-                &ldquo;We started this journey with a simple belief &mdash; that farming can feed
+                &ldquo;We started this journey with a simple belief, that farming can feed
                 the world without harming it. Every seed we plant, every partnership we build,
                 reflects our commitment to sustainability, innovation, and people.&rdquo;
               </p>
