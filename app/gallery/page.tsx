@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 
 /* Mirrors the template's mixed 1-wide / 2-wide masonry rhythm. */
 const layout = [
-  "sm:col-span-1",
   "sm:col-span-2",
   "sm:col-span-1",
   "sm:col-span-1",
@@ -26,8 +25,8 @@ export default function Gallery() {
         eyebrow="Gallery"
         title="Moments that tell our story."
         body="Land, crops, and the people who work them, photographed across our growing regions."
-        image={media.gallery[0]}
-        imageAlt="Workers harvesting vegetables"
+        image={media.gallery[1]}
+        imageAlt="Centre-pivot irrigation over a green crop field"
       />
 
       <section className="shell py-20 lg:py-28">

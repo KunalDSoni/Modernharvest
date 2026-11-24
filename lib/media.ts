@@ -45,7 +45,6 @@ export const media = {
   ],
 
   gallery: [
-    m("ugZkAwezwEFvaVvqOdHcnbt4Fk4.jpg"),
     m("HTCxbtzQLbckykWOh7EGkWRnSB0.jpg"),
     m("fnuOYPQRAUIWKkgEh310v4QoGxE.jpg"),
     m("9X7swXzMzQs0K6j4CDFqVFBOOqY.jpg"),
