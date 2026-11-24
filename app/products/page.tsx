@@ -75,27 +75,6 @@ export default function Products() {
             <ProductCard key={p.slug} product={p} />
           ))}
         </div>
-        <p className="mt-10 text-[13px] text-muted">
-          Psyllium husk photo:{" "}
-          <a
-            href="https://commons.wikimedia.org/wiki/File:Psyllium_seed_husk_pile.JPG"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-ink"
-          >
-            Bastique
-          </a>
-          , licensed under{" "}
-          <a
-            href="https://creativecommons.org/licenses/by-sa/3.0/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-ink"
-          >
-            CC BY-SA 3.0
-          </a>
-          , via Wikimedia Commons.
-        </p>
       </section>
 
       <CTABand />
