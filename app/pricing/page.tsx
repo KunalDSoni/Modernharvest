@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Testimonials from "@/components/Testimonials";
 import { CTABand, SplitHeader } from "@/components/sections";
 import { Button, Leaf } from "@/components/ui";
 import { media } from "@/lib/media";
@@ -81,7 +80,6 @@ export default function Pricing() {
         </div>
       </section>
 
-      <Testimonials />
       <CTABand />
     </>
   );

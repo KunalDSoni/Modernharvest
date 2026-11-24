@@ -188,48 +188,6 @@ export const values = [
   "Visionary",
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Working with this team has transformed the way we operate. Their sustainable approach and reliable delivery have made them an essential part of our supply chain.",
-    name: "Mark Linberg",
-    role: "CEO of Artana",
-    avatar: media.avatars[0],
-    tone: "light" as const,
-  },
-  {
-    quote: "Their team brings not only expertise but real care for the land and the farmers.",
-    name: "Lisa Rhouther",
-    role: "Head of Sourcing",
-    avatar: media.avatars[1],
-    tone: "dark" as const,
-  },
-  {
-    quote:
-      "We've seen measurable improvements in both crop quality and operational efficiency since partnering with them.",
-    name: "Rebecca Truj",
-    role: "Operations Director",
-    avatar: media.avatars[2],
-    tone: "light" as const,
-  },
-  {
-    quote:
-      "They're a genuinely friendly partner, responsive, straightforward, and invested in the outcome.",
-    name: "Daniel Okoye",
-    role: "Procurement Lead",
-    avatar: media.avatars[3],
-    tone: "green" as const,
-  },
-  {
-    quote:
-      "Traceability was the missing piece for us. Now every batch is documented from field to port.",
-    name: "Sofia Marchetti",
-    role: "Quality Manager",
-    avatar: media.avatars[4],
-    tone: "light" as const,
-  },
-];
-
 export const team = [
   { name: "James Der Linden", role: "Founder & CEO", image: media.team[0] },
   { name: "Amara Singh", role: "Head of Agronomy", image: media.team[1] },

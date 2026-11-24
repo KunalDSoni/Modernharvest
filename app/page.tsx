@@ -1,6 +1,5 @@
 import Image from "next/image";
 import HeroVideo from "@/components/HeroVideo";
-import Testimonials from "@/components/Testimonials";
 import { CTABand, SolutionCard } from "@/components/sections";
 import { Button, Leaf, Pill } from "@/components/ui";
 import { media } from "@/lib/media";
@@ -234,7 +233,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Testimonials />
       <CTABand />
     </>
   );

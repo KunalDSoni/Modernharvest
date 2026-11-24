@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Testimonials from "@/components/Testimonials";
 import { CTABand, SplitHeader } from "@/components/sections";
 import { Button, Leaf, Pill } from "@/components/ui";
 import { media } from "@/lib/media";
@@ -133,7 +132,6 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <Testimonials />
       <CTABand />
     </>
   );
