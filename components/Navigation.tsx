@@ -96,7 +96,7 @@ export default function Navigation() {
               onClick={() => setMenuOpen((v) => !v)}
               className="flex items-center gap-1.5 text-[15px] opacity-90 transition-opacity hover:opacity-70"
             >
-              All Pages
+              Explore
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={`h-4 w-4 transition-transform duration-300 ${menuOpen ? "rotate-180" : ""}`}>
                 <path d="M12 5v14M6 13l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
