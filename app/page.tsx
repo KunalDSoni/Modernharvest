@@ -193,46 +193,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Founder quote ===== */}
-      <section className="shell py-20 lg:py-28">
-        <div data-reveal className="grid overflow-hidden rounded-card lg:grid-cols-[minmax(0,530px)_minmax(0,1fr)]">
-          <div className="relative min-h-[380px]">
-            <Image
-              src={media.founder}
-              alt="James Der Linden, Founder and CEO"
-              fill
-              sizes="(max-width: 1024px) 100vw, 530px"
-              className="object-cover"
-            />
-            <span className="absolute bottom-6 left-6 text-[15px] text-white/90">
-              Founder &amp; CEO
-            </span>
-          </div>
-          <div className="flex flex-col justify-between gap-16 bg-brand p-8 text-white sm:p-12 lg:p-14">
-            <blockquote className="flex gap-4">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="h-7 w-7 shrink-0 opacity-90">
-                <path d="M9.9 5.5c-3.3 1.6-5.4 4.6-5.4 8.3 0 3 1.7 5.1 4.2 5.1 2.1 0 3.7-1.6 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.8 0-1 .2.4-1.9 2-3.6 4-4.6l-2.2-2Zm9.4 0c-3.3 1.6-5.4 4.6-5.4 8.3 0 3 1.7 5.1 4.2 5.1 2.1 0 3.7-1.6 3.7-3.6 0-2-1.4-3.4-3.3-3.4-.4 0-.8 0-1 .2.4-1.9 2-3.6 4-4.6l-2.2-2Z" />
-              </svg>
-              <p className="text-[21px] font-medium leading-snug lg:text-[24px]">
-                &ldquo;We started this journey with a simple belief, that farming can feed
-                the world without harming it. Every seed we plant, every partnership we build,
-                reflects our commitment to sustainability, innovation, and people.&rdquo;
-              </p>
-            </blockquote>
-            <div className="flex flex-wrap items-end justify-between gap-8">
-              <p className="text-[40px] font-medium leading-[1.05] tracking-[-1.2px] lg:text-[56px]">
-                James
-                <br />
-                Der Linden
-              </p>
-              <Button href="/about-us" variant="glass">
-                About us
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <CTABand />
     </>
   );
