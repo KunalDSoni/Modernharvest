@@ -6,6 +6,8 @@ import { useEffect } from "react";
 const STAGGER_MS = 100; // measured off the reference template
 const MAX_STAGGER_STEPS = 6; // don't let long lists drift far behind the scroll
 
+const show = (el: Element) => el.setAttribute("data-revealed", "");
+
 /**
  * Drives the per-block scroll reveal.
  *
@@ -16,6 +18,11 @@ const MAX_STAGGER_STEPS = 6; // don't let long lists drift far behind the scroll
  *
  * Degrades to "everything visible" without JS or IntersectionObserver, and
  * reduced-motion is handled in globals.css.
+ *
+ * Revealed state lives in a `data-revealed` attribute, not a class: React owns
+ * `className` and rewrites it whenever a client component re-renders (e.g. an
+ * FAQ card toggling open), which would silently strip a class we added here
+ * and snap the block back to invisible.
  */
 export default function Reveal() {
   const pathname = usePathname();
@@ -41,7 +48,7 @@ export default function Reveal() {
     });
 
     if (typeof IntersectionObserver === "undefined") {
-      nodes.forEach((n) => n.classList.add("is-in"));
+      nodes.forEach(show);
       return;
     }
 
@@ -49,7 +56,7 @@ export default function Reveal() {
       (entries) => {
         entries.forEach((e) => {
           if (!e.isIntersecting) return;
-          e.target.classList.add("is-in");
+          show(e.target);
           io.unobserve(e.target);
         });
       },
@@ -60,7 +67,7 @@ export default function Reveal() {
     nodes.forEach((n) => {
       // Anything already on screen at mount shows immediately - no flash.
       if (n.getBoundingClientRect().top < window.innerHeight * 0.9) {
-        n.classList.add("is-in");
+        show(n);
       } else {
         io.observe(n);
       }
