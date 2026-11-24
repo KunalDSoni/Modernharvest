@@ -12,6 +12,7 @@ export const media = {
   precisionFarming: m("VMUywOhKNsGCYSx01cpQVToqTU.jpg"),
   sustainableIrrigation: m("ITj0m4cojCl5KTS5ctOJgWN8uvg.jpg"),
   supplyChain: m("zeoPYx06jCmlnLFcwMNcJHRRU.jpg"),
+  organicPractices: m("organic-groundnut-plant.jpg"),
 
   // Sustainability split section
   sustainability: m("kTTxNuTmZ5aFkmvNBmn4O7JDGw0.jpeg"),

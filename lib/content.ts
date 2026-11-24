@@ -137,7 +137,7 @@ export const solutions: Solution[] = [
     title: "Organic practices",
     short:
       "Certification-ready organic systems built on soil health rather than substitution.",
-    image: media.vegetables,
+    image: media.organicPractices,
     intro:
       "Organic conversion fails when it is treated as swapping one input for another. We rebuild the system underneath, soil biology, rotation, and pest ecology, so the farm holds its yield through transition.",
     body:
